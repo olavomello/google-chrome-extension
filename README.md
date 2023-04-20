@@ -39,4 +39,4 @@ https://developer.chrome.com/docs/webstore/register/
 ## Finalizando
 
 Bom é isso ai. Espero este material seja útil a você e em seus projetos.
-Me siga no <a href="https://www.linkedin.com/in/olavo-mello/" target="_blank">Linkedin</a> e fique por dentro de muitas coisas mais pela frente ;)
+<br>Me siga no <a href="https://www.linkedin.com/in/olavo-mello/" target="_blank">Linkedin</a> e fique por dentro de muitas coisas mais pela frente 🚀
