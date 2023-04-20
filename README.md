@@ -1,3 +1,7 @@
+<div aling="center"><img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*WJ9DEdlUwhJSALwjpQItdg.png"/></div>
+
+English version : <a href="https://olavomello.medium.com/creating-a-google-chrome-extension-using-html-css-javascript-d39d65b7d790">Medium</a>
+
 # TabNews Reader - Google Chrome Extension
 
 Como gosto sempre de acompanhar as novidades no TabNews, resolvi criar uma <b>Extensão para o Chrome</b> para facilitar meu dia a dia.
