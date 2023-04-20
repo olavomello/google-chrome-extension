@@ -1,4 +1,9 @@
 function loadMenu() {
+
+  // Const
+  const PROXY = false;
+
+  if( PROXY ) {
   // Proxy access to the RSS feed
   fetch(
     `https://api.allorigins.win/get?url=${encodeURIComponent(
@@ -36,6 +41,43 @@ function loadMenu() {
       // Change body cursor to pointer
       document.body.style.cursor = "pointer";
     });
+  } else {
+  // Reading direct TabNews API
+
+  // BASE URL
+  const URL = "https://www.tabnews.com.br";
+
+  const options = {method: 'GET'};
+  fetch(URL+'/api/v1/contents', options)
+    .then(response => response.json())
+    .then((items) => {
+      
+      // Generate OL List
+      var list = "<ol>";
+      // Loop through items
+      for (var i = 0; i < items.length; i++) {
+        const { owner_username, tabcoins, title, slug } = items[i];
+
+        // Link
+        var link = `${URL}/${owner_username}/${slug}`;
+
+        // Is burining?
+        const burning = ( tabcoins > 10 ) ? ' <span class="burning" title="Em alta">🔥</span>' : '';  
+
+        // Generate list item
+        list += " <li><a href='" + link + "' target='_blank'>" + burning + " " + title + "</a></li>";
+      }
+      // Close list
+      list += "</ol>";
+      
+      // Add menu list
+      document.getElementById("menu").innerHTML = list;
+      
+      // Change body cursor to pointer
+      document.body.style.cursor = "pointer";
+    })
+    .catch(err => console.error(err));
+  }
 }
 
 // Document ready
