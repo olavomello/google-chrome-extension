@@ -1,0 +1,32 @@
+{
+  "name": "TabNews Reader",
+  "version": "1.0.0",
+  "description": "Tabnews Reader",
+  "manifest_version": 3,
+  "author": "Olavo Mello",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "TabNews Reader"
+  },
+  "icons": {
+    "16": "assets/favicon-light.png",
+    "32": "assets/favicon-light.png",
+    "48": "assets/favicon-light.png",
+    "128": "assets/apple-touch-icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/script.js"
+      ],
+      "css" : [
+        "css/style.css"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://www.tabnews.com.br/recentes/rss"
+      ]
+    }
+  ]  
+}

@@ -1,0 +1,27 @@
+{
+  "name": "google-chrome-extension",
+  "version": "1.0.0",
+  "description": "Google Chrome Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olavomello/google-chrome-extension.git"
+  },
+  "keywords": [
+    "google",
+    "chrome",
+    "extension",
+    "javascript"
+  ],
+  "author": "Olavo Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olavomello/google-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/olavomello/google-chrome-extension#readme",
+  "dependencies": {
+  }
+}
